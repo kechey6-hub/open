@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>힐링송 추천</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Pretendard", sans-serif;
+            background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            padding: 50px 20px 20px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        .song-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .song-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 18px;
+            padding: 20px;
+            width: 280px;
+            backdrop-filter: blur(10px);
+            transition: all 0.25s ease;
+            cursor: pointer;
+        }
+
+        .song-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.18);
+        }
+
+        .song-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .artist {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin: 8px 0 15px;
+        }
+
+        a.listen-btn {
+            display: inline-block;
+            padding: 10px 16px;
+            background: #ffffff;
+            color: #3f2b96;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        a.listen-btn:hover {
+            background: #ddd;
+        }
+
+        footer {
+            padding: 20px;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>우울할 때 듣는 힐링송</h1>
+        <p class="subtitle">마음이 힘들 때, 기분을 끌어올려주는 감성 노래 추천</p>
+    </header>
+
+    <section class="song-list">
+
+        <!-- SONG 1 -->
+        <div class="song-card">
+            <div class="song-title">그대가 살아서</div>
+            <div class="artist">정동원</div>
+            <a class="listen-btn" href="https://www.youtube.com/results?search_query=정동원+그대가+살아서" target="_blank">
+                들으러 가기
+            </a>
+        </div>
+
+        <!-- SONG 2 -->
+        <div class="song-card">
+            <div class="song-title">혜성</div>
+            <div class="artist">윤하 (Younha)</div>
+            <a class="listen-btn" href="https://www.youtube.com/results?search_query=윤하+혜성" target="_blank">
+                들으러 가기
+            </a>
+        </div>
+
+        <!-- SONG 3 (추가 추천) -->
+        <div class="song-card">
+            <div class="song-title">밤편지</div>
+            <div class="artist">아이유 (IU)</div>
+            <a class="listen-btn" href="https://www.youtube.com/results?search_query=아이유+밤편지" target="_blank">
+                들으러 가기
+            </a>
+        </div>
+
+    </section>
+
+    <footer>
+        감성을 지켜주는 음악들 ✨
+    </footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그대가 살아서 - 정동원</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Pretendard", sans-serif;
+            background: linear-gradient(135deg, #9cb1ff, #7b83e3, #6a5fd0);
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .artist {
+            margin-top: 10px;
+            font-size: 20px;
+            opacity: 0.8;
+        }
+
+        .video {
+            margin-top: 40px;
+        }
+
+        .desc {
+            margin-top: 50px;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        .input-box {
+            margin-top: 40px;
+        }
+
+        textarea {
+            width: 90%;
+            height: 120px;
+            border-radius: 10px;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .home {
+            margin-top: 50px;
+            display: inline-block;
+            text-decoration: none;
+            background: white;
+            color: #4d53c6;
+            padding: 12px 26px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">그대가 살아서</div>
+        <div class="artist">정동원</div>
+
+        <div class="video">
+            <!-- 유튜브 영상 변경 가능 -->
+            <iframe width="100%" height="415" src="https://www.youtube.com/embed/ITYgHRzH1vE"
+            title="YouTube video" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="desc">
+            <!-- 여기에 노래 소개 문장을 적으면 됨 -->
+            <!-- 예시 -->
+            이 노래는 내가 마음이 힘들거나 지칠 때마다 크게 위로가 되는 노래야.
+            가사가 따뜻하고 부드러워서 듣고 있으면 마음이 안정되는 느낌을 받아.
+            노래가 끝난 뒤에도 따뜻함이 오래 남아 있는 노래야.
+        </div>
+
+        <div class="input-box">
+            <!-- 여기에 나의 감상문 작성 -->
+            <textarea placeholder="여기에 나만의 감상을 적어보세요."></textarea>
+        </div>
+
+        <a class="home" href="index.html">홈으로 돌아가기</a>
+    </div>
+
+</body>
+</html>
